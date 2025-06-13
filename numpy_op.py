@@ -6,8 +6,8 @@ print(arr)
 
 # operations on numoy
 
-a = np.array([[2,3,4]])
-b = np.array([[5,6,7]])
+a = np.array([2,3,4])
+b = np.array([5,6,7])
 
 # one way to use operations
 add = print(f"add is : {np.add(a,b)}")
@@ -38,3 +38,5 @@ zero = np.zeros((5,3),dtype=int)
 print(zero)
 
 print(c[2,1])
+print(c[2])
+print(c[:,2])
