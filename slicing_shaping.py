@@ -1,6 +1,8 @@
 import numpy as np
 
 data = np.array([[2,3,4,25],[2,5,6,50],[8,9,10,75]])
+data[1,1] = 22 
+print(data)
 
 a1 = data[0:2] # only row 0 and 1 and but all columns
 a2 = data[0:2,:] # same as above colan denote all

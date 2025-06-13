@@ -6,20 +6,30 @@ print(arr)
 
 # operations on numoy
 
-a = int(input())
-b = int(input())
+a = np.array([[2,3,4]])
+b = np.array([[5,6,7]])
 
+# one way to use operations
 add = print(f"add is : {np.add(a,b)}")
 sub = print(f"sub is : {np.subtract(a,b)}")
-multiply = print(f"sub is : {np.multiply(a,b)}")
-divide = print(f"sub is : {np.divide(a,b)}")
+multiply = print(f"mul. is : {np.multiply(a,b)}")
+divide = print(f"div. is : {np.divide(a,b)}")
 
-c = np.array([[22,3,4,],[32,55,6],[54,5,99]])
-d = np.array([[11,23,44],[8,9,10],[17,99,7]])
+c = np.array([[22,3,4,],[32,55,6],[17,99,7]])
+d = np.array([[11,23,44],[8,9,10],[66,5,2]])
+
+# other way to use operations 
+x = c+d
+print(x)
+print(np.add(c,d))
+# both ways can we used for operations
+
+print(c-d)
+print(c*d)
 
 print(np.dot(c,d)) # matrix multiplication
 print()
-print(np.cross(c,d)) # find determinant type
+print(np.cross(c,d)) 
 
 t = np.transpose(c) # transpose
 print(t)
