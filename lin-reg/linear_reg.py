@@ -25,5 +25,6 @@ for epoch in range(epochs):
     w -= learning_rate * dw
     b -= learning_rate * db
 
-print("Optimal parameters: w =", w, "b =", b)
+print("Optimal parameters: w =", w, "b =", b) 
 
+ 

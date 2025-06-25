@@ -3,6 +3,8 @@ import numpy as np
 
 a = np.array([[1,2,3],[5,4,9],[9,8,11]])
 b = np.array([[10,20,30]]) 
+m = b[0]
+print(m)
 
 # adding a row or column
 

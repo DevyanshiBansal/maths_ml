@@ -9,6 +9,9 @@ print(arr)
 a = np.array([2,3,4])
 b = np.array([5,6,7])
 
+y = np.sum([a,b])
+print(y)
+
 # one way to use operations
 add = print(f"add is : {np.add(a,b)}")
 sub = print(f"sub is : {np.subtract(a,b)}")
@@ -19,6 +22,8 @@ c = np.array([[22,3,4,],[32,55,6],[17,99,7]])
 d = np.array([[11,23,44],[8,9,10],[66,5,2]])
 
 # other way to use operations 
+
+
 x = c+d
 print(x)
 print(np.add(c,d))
