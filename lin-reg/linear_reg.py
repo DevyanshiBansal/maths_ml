@@ -10,15 +10,19 @@ y = np.array([100, 200, 300, 400, 500])  # House prices
 w = 0
 b = 0
 learning_rate = 0.01
-epochs = 100
+epochs = 1
 
 # Gradient Descent
 for epoch in range(epochs):
     # Compute predictions
     predictions = w * X + b
+    print(predictions.shape)  # it is an array of order (5,1)
     
-    # Compute gradients
-    dw = (1/len(X)) * np.sum((predictions - y) * X)
+    # Compute gradients 
+
+    dw = (1/len(X)) * np.sum((predictions - y) * X) # the multiplication sign here does element-wise multiply not dot or cross product.
+
+    # so here in dw, two arrays are subtracted like elements are subtracted which then gives one array which is them element wise multiplied to X array.
     db = (1/len(X)) * np.sum(predictions - y)
     
     # Update parameters
@@ -27,4 +31,4 @@ for epoch in range(epochs):
 
 print("Optimal parameters: w =", w, "b =", b) 
 
- 
+# np.sum((predictions - y) * X) this whole thing acts like a submission and same for db one.
